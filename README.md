@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/assets/Me.png"  height="128">
+  <img src="public/assets/me.png"  height="128">
   <h2 align="center"><a href="https://sayem-me.vercel.app/"> sayem-me </a></h2>
   <p align="center">Personal Portfolio<p>
   <p align="center">
@@ -26,7 +26,7 @@ serve build
 **Note:** use the `depth` parameter to reduce the clone size and speed up the clone.
 
 ```sh
-git clone --depth=1 https://github.com/Aj-Seven/ajseven.me.git
+git clone --depth=1 https://github.com/Sayem98/sayem.me
 ```
 
-<a href="https://www.buymeacoffee.com/aj.seven" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
+<a href="https://www.buymeacoffee.com/sayem98" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 40px !important;width: 140px !important;" ></a>
