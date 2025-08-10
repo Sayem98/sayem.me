@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="public/assets/Logo.png"  height="128">
-  <h2 align="center"><a href="https://aj7.pages.dev"> ajseven.me </a></h2>
+  <img src="public/assets/Me.png"  height="128">
+  <h2 align="center"><a href="https://sayem-me.vercel.app/"> sayem-me </a></h2>
   <p align="center">Personal Portfolio<p>
   <p align="center">
    <a href='#'><img src=https://img.shields.io/badge/Maintained%3F-yes-green.svg></img><a/>

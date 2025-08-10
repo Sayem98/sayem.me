@@ -58,19 +58,19 @@ export const timeline = [
     year: "2022 - 2023",
     detail:
       "Graduated with honors while building production-grade applications. Published research on blockchain applications and contributed to open-source projects.",
-    tech: ["React", "Solidity", "Web3.js", "MongoDB"],
+    // tech: ["React", "Solidity", "Web3.js", "MongoDB"],
   },
   {
     year: "2020 - 2021",
     detail:
       "Deep dive into full-stack development. Built my first SaaS product that gained 500+ active users. Won hackathon for innovative use of AI in education.",
-    tech: ["JavaScript", "Python", "TensorFlow", "Firebase"],
+    tech: ["JavaScript", "nodejs", "React.js", "MongoDB", "Express.js"],
   },
   {
     year: "2018 - 2019",
     detail:
       "First lines of code to first deployed app. Fell in love with problem-solving through programming. Built custom CMS for local businesses.",
-    tech: ["HTML/CSS", "PHP", "MySQL", "jQuery"],
+    tech: ["HTML/CSS", "JavaScript", "MySQL", "jQuery"],
   },
 ];
 export const contactItems = [
@@ -113,19 +113,25 @@ export const contactItems = [
 
 export const projectData = [
   {
-    name: "Done Today",
-    description: "Track what you achieve every day. One thing at a time.",
-    tech: ["NextJS", "React", "TypeScript", "TailwindCSS", "MongoDB"],
-    live: "https://done-today.xyz",
+    name: "Bubbas Finance",
+    description: "A defi app for managing crypto assets",
+    tech: [
+      "NextJS",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "MongoDB",
+      "Express.js",
+    ],
+    live: "https://bubbas.fun/",
     category: "Web",
   },
   {
-    name: "PostalMapper",
-    description:
-      "A digital address card generator based on postal code with QR support, export options. Built with React & Tailwind.",
+    name: "Digi Heir",
+    description: " A digital and crypto asset management platform.",
     tech: ["React", "TailwindCSS", "QRCode"],
     live: "https://postal-mapper.vercel.app",
-    github: "https://github.com/aj-seven/postal-mapper",
+    github: "https://github.com/wubba1211/digiheir",
     category: "Web",
   },
   {
