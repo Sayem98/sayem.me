@@ -24,8 +24,8 @@ const sections = {
   Skills: <Skills />,
   //Fetch: <Neofetch />,
   Contact: <Contact />,
-  Blogs: <div>Blogs Section</div>, // Placeholder for Blogs section
-  Resume: <div>Resume Section</div>, // Placeholder for Resume section
+  // Blogs: <div>Blogs Section</div>,
+  // Resume: <div>Resume Section</div>,
 };
 
 const navItems = [
@@ -35,8 +35,6 @@ const navItems = [
   { name: "Skills", path: "/skills", icon: Target },
   //{ name: "Fetch", path: "/fetch", icon: Feather },
   { name: "Contact", path: "/contact", icon: ContactRound },
-  { name: "Blogs", path: "/blogs", icon: Info }, // Placeholder for Blogs
-  { name: "Resume", path: "/resume", icon: Info }, // Placeholder for Resume
 ];
 
 const BottomNavbar = () => {

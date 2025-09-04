@@ -10,6 +10,8 @@ import {
   Github,
   Linkedin,
   Link2Icon,
+  Languages,
+  Briefcase,
 } from "lucide-react";
 
 export const fetchData = [
@@ -43,6 +45,12 @@ export const skills = [
   { name: "REST APIs", icon: Code }, // REST as API design
   { name: "Redis", icon: Database }, // Redis as caching solution
   { name: "AWS", icon: Server }, // AWS for cloud services
+  { name: "Solidity", icon: Code }, // Figma for design
+  { name: "Web3.js", icon: Code }, // Figma for design
+  { name: "Hardhat", icon: Code }, // Figma for design
+  { name: "Ethers.js", icon: Code }, // Figma for design
+  { name: "JavaScript", icon: Languages }, // JavaScript as core language
+  { name: "Wagmi ", icon: Code },
 ];
 
 export const facts = [
@@ -86,37 +94,44 @@ export const contactItems = [
   {
     icon: Mail,
     label: "Email",
-    value: "ajseven@outlook.in",
-    href: "mailto:ajseven@outlook.in",
+    value: "sayemabedin.bd@gmail.com",
+    href: "mailto:sayemabedin.bd@gmail.com",
     color: "text-blue-500",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "India",
+    value: "Dhaka, Bangladesh",
     href: null,
     color: "text-red-500",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/aj-seven",
-    href: "https://github.com/aj-seven",
+    value: "github.com/Sayem98",
+    href: "https://github.com/Sayem98",
     color: "text-foreground",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/ajseven",
-    href: "https://www.linkedin.com/in/ajseven",
+    value: "linkedin.com/in/sayem-abedin",
+    href: "https://www.linkedin.com/in/sayem-abedin/",
     color: "text-blue-600",
   },
   {
-    icon: Link2Icon,
-    label: "Discord",
-    value: "Discord",
-    href: "https://discord.com/users/.ajseven",
-    color: "text-indigo-500",
+    icon: Briefcase,
+    label: "Upwork",
+    value: "upwork/sayem-abedin",
+    href: "https://www.upwork.com/freelancers/~01ed29c46ac701c056",
+    color: "text-blue-600",
+  },
+  {
+    icon: Briefcase,
+    label: "Fiverr",
+    value: "fiverr/sayem_abedin",
+    href: "https://www.fiverr.com/sellers/sayem_abedin",
+    color: "text-blue-600",
   },
 ];
 
@@ -171,5 +186,101 @@ export const projectData = [
     live: "https://rewardsx.in",
     github: "",
     category: "App",
+  },
+  {
+    name: "SELETTI",
+    description: "A staking platform for crypto assets",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://endearing-semifreddo-53a0fe.netlify.app/",
+    github: "",
+    category: "Web",
+  },
+  {
+    name: "Sentinel Blockchain Ecosystem",
+    description: "A multi-phase pre-sale dApp for for token launch",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://lambent-buttercream-87645d.netlify.app/",
+    github: "",
+    category: "Web",
+  },
+  {
+    name: "TEDDY BEAR CRYPTO LAND",
+    description: "A multi-stage erc-20 token launch dApp",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://earnest-duckanoo-de491a.netlify.app/",
+    github: "",
+    category: "Web",
+  },
+  {
+    name: "BULLS LODGE",
+    description: "A NFT minting dApp for erc-721 tokens",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://bulls-lodge.netlify.app/",
+    github: "",
+    category: "Web",
+  },
+  {
+    name: "MILLION ETH",
+    description: "A Lottery dApp on Ethereum Blockchain",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://www.million-eth.baby/",
+    github: "",
+    category: "Web",
+  },
+  {
+    name: "Bear Loot Box",
+    description: "A in-game purchase and rewards system",
+    tech: [
+      "React",
+      "TailwindCSS",
+      "QRCode",
+      "Solidity",
+      "Wagmi",
+      "WalletConnect",
+      "React-Query",
+    ],
+    live: "https://resplendent-babka-b44d7d.netlify.app/",
+    github: "",
+    category: "Web",
   },
 ];

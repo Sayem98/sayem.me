@@ -94,7 +94,7 @@ const Navbar = ({ terminalMode, setTerminalMode }: Props) => {
         <div className="flex p-2 border border-gray-400 dark:border-gray-600 rounded-full items-center gap-4">
           {/* Theme Toggle - Hidden in Terminal Mode */}
           <a
-            href="https://github.com/aj-seven/aj-seven.me"
+            href="https://github.com/Sayem98/sayem.me"
             target="_blank"
             title="Source Code"
           >
@@ -111,13 +111,13 @@ const Navbar = ({ terminalMode, setTerminalMode }: Props) => {
           )}
 
           {/* Terminal Toggle */}
-          <button
+          {/* <button
             onClick={handleTerminalToggle}
             title="Toggle Terminal Mode"
             className="transition-transform duration-300 relative z-10"
           >
             <Terminal size={20} />
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>

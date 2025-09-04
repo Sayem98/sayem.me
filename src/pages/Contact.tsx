@@ -10,7 +10,7 @@ const Contact = () => {
         transition={{ duration: 0.6 }}
         className="w-full max-w-xl mx-auto backdrop-blur-sm border border-gray-400 dark:border-gray-600 rounded-xl p-6 sm:p-8"
       >
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 underline underline-offset-4 decoration-blue-500">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4   decoration-blue-500">
           Get in Touch
         </h2>
         <p className="text-muted-foreground text-base sm:text-lg mb-8">
