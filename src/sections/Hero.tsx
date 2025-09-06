@@ -8,7 +8,7 @@ const Hero = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="max-h-fit mt-48 w-full flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-2 gap-8 overflow-hidden"
+      className="max-h-fit mt-10 md:mt-48 w-full flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-2 gap-8 overflow-hidden"
     >
       {/* Left Section */}
       <div className="text-center lg:text-left max-w-2xl space-y-4">
@@ -107,9 +107,9 @@ const Hero = () => {
         className="relative flex justify-center"
       >
         <img
-          src="/assets/me.png"
-          alt="Abdul Jaber"
-          className="relative z-10 h-48 md:h-64 rounded-full border-4 border-blue-500 shadow-sm object-fit "
+          src="/assets/me2.jpg"
+          alt="Sayem Abedin"
+          className="relative z-10 w-56 h-56 md:w-64 md:h-64 rounded-full border-4 border-blue-500 shadow-sm object-cover"
         />
       </motion.div>
     </motion.section>
