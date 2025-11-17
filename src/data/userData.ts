@@ -54,7 +54,7 @@ export const skills = [
 ];
 
 export const facts = [
-  "1.5 Years Experience",
+  "3 Years Experience",
   "Full Stack Developer",
   "Node.js & Express",
   "React.js Wizard",

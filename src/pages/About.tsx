@@ -27,14 +27,15 @@ const About = () => {
         className="text-lg md:text-xl text-center text-muted-foreground max-w-3xl mx-auto mb-8"
       >
         I'm <span className="text-primary font-bold">Md. Sayem Abedin</span>, a
-        passionate full-stack developer with{" "}
-        <span className="text-primary font-bold">1.5 years</span> of hands-on
+        passionate smart contract and full-stack dapp developer with{" "}
+        <span className="text-primary font-bold">3 years</span> of hands-on
         experience turning ideas into digital reality.
         <br />
         <br />
-        My journey in tech has been an exciting adventure - from crafting robust
-        backend systems with Node.js to creating sleek frontend interfaces with
-        React. I don't just write code, I build solutions that{" "}
+        My journey in tech has been an exciting adventure - from gas efficient,
+        secure smart contract to crafting robust backend systems with Node.js to
+        creating sleek frontend interfaces with React. I don't just write code,
+        I build solutions that{" "}
         <span className="italic">solve real problems</span>.
         <br />
         <br />
