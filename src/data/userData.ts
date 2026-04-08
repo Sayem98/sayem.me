@@ -54,7 +54,7 @@ export const skills = [
 ];
 
 export const facts = [
-  "3 Years Experience",
+  "2 Years Experience",
   "Full Stack Developer",
   "Node.js & Express",
   "React.js Wizard",
@@ -66,28 +66,25 @@ export const facts = [
 
 export const timeline = [
   {
-    year: "2024 - Present",
+    company: "IMS Systems",
+    year: "2025,Dec - Present",
+    detail:
+      "Driving innovation at IMS Systems, leading the development of cutting-edge web applications. Implementing microservices architecture and optimizing performance across the stack.",
+    tech: ["TypeScript", "React", "Next.js", "Node.js", "Docker", "AWS"],
+  },
+  {
+    company: "Technovicinity",
+    year: "2024,Jan - 2025,Nov",
     detail:
       "Leading development projects at Technovicinity, architecting scalable solutions with microservices and cloud technologies. Spearheaded the migration to containerized deployments.",
     tech: ["Node.js", "Docker", "Kubernetes", "AWS"],
   },
   {
-    year: "2022 - 2023",
+    company: "Freelance",
+    year: "2021 - 2023",
     detail:
       "Graduated with honors while building production-grade applications. Published research on blockchain applications and contributed to open-source projects.",
-    // tech: ["React", "Solidity", "Web3.js", "MongoDB"],
-  },
-  {
-    year: "2020 - 2021",
-    detail:
-      "Deep dive into full-stack development. Built my first SaaS product that gained 500+ active users. Won hackathon for innovative use of AI in education.",
-    tech: ["JavaScript", "nodejs", "React.js", "MongoDB", "Express.js"],
-  },
-  {
-    year: "2018 - 2019",
-    detail:
-      "First lines of code to first deployed app. Fell in love with problem-solving through programming. Built custom CMS for local businesses.",
-    tech: ["HTML/CSS", "JavaScript", "MySQL", "jQuery"],
+    tech: ["React", "Solidity", "Web3.js", "MongoDB"],
   },
 ];
 export const contactItems = [
