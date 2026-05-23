@@ -39,7 +39,7 @@ export const skills = [
     name: "Docker",
     icon: Server, // Docker as containerization
   },
-  { name: "Kubernatis", icon: Server },
+  { name: "Kubernetes", icon: Server },
   { name: "Express.js", icon: Server }, // Express as web framework
   { name: "GraphQL", icon: Code }, // GraphQL as query language
   { name: "REST APIs", icon: Code }, // REST as API design
@@ -50,7 +50,7 @@ export const skills = [
   { name: "Hardhat", icon: Code }, // Figma for design
   { name: "Ethers.js", icon: Code }, // Figma for design
   { name: "JavaScript", icon: Languages }, // JavaScript as core language
-  { name: "Wagmi ", icon: Code },
+  { name: "Wagmi", icon: Code },
 ];
 
 export const facts = [
