@@ -7,7 +7,6 @@ import {
   FolderKanban,
   ContactRound,
   Target,
-  //Feather,
 } from "lucide-react";
 
 import About from "../pages/About";
@@ -15,17 +14,13 @@ import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
-//import Neofetch from "../pages/Fetch";
 
 const sections = {
   Home: <Home />,
   About: <About />,
   Projects: <Projects />,
   Skills: <Skills />,
-  //Fetch: <Neofetch />,
   Contact: <Contact />,
-  // Blogs: <div>Blogs Section</div>,
-  // Resume: <div>Resume Section</div>,
 };
 
 const navItems = [
@@ -33,7 +28,6 @@ const navItems = [
   { name: "About", path: "/about", icon: Info },
   { name: "Projects", path: "/projects", icon: FolderKanban },
   { name: "Skills", path: "/skills", icon: Target },
-  //{ name: "Fetch", path: "/fetch", icon: Feather },
   { name: "Contact", path: "/contact", icon: ContactRound },
 ];
 
@@ -56,12 +50,11 @@ const BottomNavbar = () => {
   const scrollToActive = (index: number) => {
     const container = scrollRef.current;
     if (container) {
-      const activeBtn = container.children[index] as HTMLElement;
+      const activeBtn = container.children[index + 1] as HTMLElement;
       if (activeBtn) {
         const offsetLeft = activeBtn.offsetLeft;
         const containerWidth = container.offsetWidth;
-        const scrollAmount =
-          offsetLeft - containerWidth / 4 + activeBtn.offsetWidth / 4;
+        const scrollAmount = offsetLeft - containerWidth / 2 + activeBtn.offsetWidth / 2;
         container.scrollTo({ left: scrollAmount, behavior: "smooth" });
       }
     }
@@ -78,28 +71,28 @@ const BottomNavbar = () => {
     scrollToActive(newIndex);
   };
 
-  const handleDragEnd = (_: any, info: { offset: { x: number } }) => {
+  const handleDragEnd = (_: unknown, info: { offset: { x: number } }) => {
     if (info.offset.x > 50) {
       rotateTo("left");
-    } else if (info.offset.x < 50) {
+    } else if (info.offset.x < -50) {
       rotateTo("right");
     }
     dragX.set(0);
   };
 
-  const CurrentComponent = sections[navItems[currentIndex].name];
+  const CurrentComponent = sections[navItems[currentIndex].name as keyof typeof sections];
 
   return (
     <div className="w-screen h-dvh bg-background overflow-hidden">
       {/* Main Page Content */}
-      <div className="absolute inset-x-0 flex flex-col text-center z-10 rounded-t-lg bg-glass">
-        <div className="py-10 mb-12 max-h-dvh overflow-y-auto z-0">
+      <div className="absolute inset-x-0 top-0 flex flex-col z-10 bg-glass">
+        <div className="pt-14 pb-20 max-h-dvh overflow-y-auto">
           {CurrentComponent}
         </div>
       </div>
 
-      {/* Bottom Navbar with Drag/Scroll */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t rounded-t-2xl border-gray-400 dark:border-gray-600">
+      {/* Bottom Navbar */}
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-t border-border rounded-t-2xl">
         <motion.div
           ref={scrollRef}
           drag="x"
@@ -107,10 +100,10 @@ const BottomNavbar = () => {
           dragConstraints={{ left: 0, right: 0 }}
           onDragEnd={handleDragEnd}
           style={{ rotate: rotation }}
-          className="flex items-center sm:justify-center py-3 overflow-x-auto no-scrollbar gap-2 px-2 sm:px-4"
+          className="flex items-center sm:justify-center py-2 pb-safe overflow-x-auto no-scrollbar gap-1 px-3"
         >
-          {/* End Spacer */}
-          <div className="w-4 sm:w-6 flex-shrink-0" />
+          {/* Start spacer */}
+          <div className="w-2 sm:w-4 flex-shrink-0" />
 
           {navItems.map((item, index) => {
             const isActive = index === currentIndex;
@@ -123,23 +116,20 @@ const BottomNavbar = () => {
                   navigate(item.path);
                   scrollToActive(index);
                 }}
-                className={`flex-shrink-0 w-fit flex flex-col items-center justify-center px-4 py-1 rounded-xl transition-all duration-200 ${
+                className={`flex-shrink-0 flex flex-col items-center justify-center px-5 py-2 rounded-xl transition-all duration-200 ${
                   isActive
-                    ? "text-primary scale-110 translate-y-[-10px] shadow-md bg-gray-300/10"
-                    : "text-muted-foreground hover:bg-gray-300/10"
+                    ? "text-primary bg-primary/10 translate-y-[-6px] shadow-sm"
+                    : "text-muted-foreground hover:text-foreground hover:bg-accent"
                 }`}
-                style={{
-                  zIndex: isActive ? 10 : "auto",
-                }}
               >
-                <Icon size={22} />
-                <span className="text-[13px]">{item.name}</span>
+                <Icon size={20} strokeWidth={isActive ? 2.5 : 2} />
+                <span className="text-[11px] mt-0.5 font-medium">{item.name}</span>
               </button>
             );
           })}
 
-          {/* End Spacer */}
-          <div className="w-4 sm:w-6 flex-shrink-0" />
+          {/* End spacer */}
+          <div className="w-2 sm:w-4 flex-shrink-0" />
         </motion.div>
       </nav>
     </div>
